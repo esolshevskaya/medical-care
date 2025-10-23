@@ -1,16 +1,60 @@
-# React + Vite
+# MedCare - Medical Service Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive medical service platform built with React, featuring user authentication and a clean, professional design.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was developed as a technical task to create a fully responsive medical platform with user authentication. The application demonstrates modern React development practices with a focus on responsive design and user experience.
 
-## React Compiler
+## Technical Requirements
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **User Management**: JSON-based user database with login/password authentication
+- **Full Responsiveness**: Optimized for desktop, tablet, and mobile devices
+- **Pixel-Perfect Design**: Maximum 3-5px deviation from design specifications
+- **Multi-page Structure**: Homepage, Profile, and Contacts pages
+- **Authentication System**: Modal-based login with form validation
+- **Data Persistence**: localStorage for authentication state
+- **GitHub Deployment**: Complete codebase with documentation
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Authentication System
+- Modal login form with real-time validation
+- Password strength requirement (minimum 8 characters)
+- Persistent sessions using localStorage
+- Secure logout functionality
+
+### Responsive Design
+- **Desktop** (1124px+): Full-featured layout with optimal spacing
+- **Tablet** (786px-1123px): Adapted navigation and content layout
+- **Mobile** (up to 785px): Mobile-first design with touch-friendly interfaces
+
+### User Interface
+- Medical-themed color scheme (#FF685B primary color)
+- Modern typography using Montserrat and Open Sans fonts
+- Consistent spacing and alignment system
+- Interactive elements with hover states and transitions
+
+### Page Structure
+- **Homepage**: Hero section with service cards and call-to-action
+- **Profile**: Personal dashboard (requires authentication)
+- **Contacts**: Contact information page
+- **Dynamic Navigation**: Context-aware header with login/logout states
+
+## Technology Stack
+
+### Frontend
+- **React 18** - Modern React with hooks and functional components
+- **React Router DOM** - Client-side routing and navigation
+- **CSS3** - Custom styling with Flexbox and Grid layouts
+- **SVG Icons** - Custom medical-themed icons
+
+### Development & Build
+- **Vite** - Fast development build tool
+- **ES6+ JavaScript** - Modern JavaScript features
+- **Git Version Control** - Proper source code management
+
+### Data Management
+- **JSON Database** - User credentials and profiles
+- **localStorage API** - Client-side data persistence
+- **Mock API** - Simulated backend responses
