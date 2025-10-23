@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>MedCare</title>
-    <link rel="icon" href="/medical-care/favicon.ico" />
     <script>
-        window.location.href = '/medical-care/';
+        // Редирект для SPA на GitHub Pages
+        sessionStorage.redirect = location.pathname;
+        location.replace('/medical-care/');
     </script>
 </head>
 <body>
