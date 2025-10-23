@@ -1,0 +1,90 @@
+.card {
+    width: 329px;
+    height: 248px;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 20px;
+    background: #fff;
+    box-shadow: 0px 13px 19px rgba(0,0,0,0.07);
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.card-icon {
+    width: 72px;
+    height: 72px;
+    background: #E74040;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #252B42;
+    margin: 0;
+}
+
+.divider {
+    width: 50px;
+    height: 2px;
+    background: #E74040;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #737373;
+    margin: 0;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 1124px) {
+    .card-row {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    .card {
+        flex: 1;
+    }
+}
+
+@media (min-width: 786px) and (max-width: 1123px) {
+    .card {
+        flex: 0 0 auto;
+    }
+}
+
+@media (max-width: 785px) {
+    .card {
+        width: 328px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+        max-width: 328px;
+    }
+}

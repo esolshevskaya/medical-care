@@ -1,0 +1,101 @@
+.contacts-container {
+    max-width: 1046px;
+    margin: 80px auto;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+.contacts-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.contacts-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    margin: 0;
+    width: 727px;
+    height: 71px;
+}
+
+.contacts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 415px;
+    height: 280px;
+}
+
+/* Планшет (786px – 1123px) */
+@media (min-width: 786px) and (max-width: 1123px) {
+    .contacts-container {
+        max-width: 100%;
+        margin: 60px auto;
+        padding: 60px 40px;
+        gap: 60px;
+    }
+
+    .contacts-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .contacts-title {
+        width: 100%;
+        font-size: 42px;
+        line-height: 60px;
+        height: auto;
+    }
+
+    .contacts-content {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 785px) {
+    .contacts-container {
+        max-width: 100%;
+        margin: 38px auto 80px;
+        padding: 40px 3%;
+        gap: 40px;
+    }
+
+    .contacts-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    .contacts-title {
+        width: 100%;
+        font-size: 28px;
+        line-height: 39px;
+        height: auto;
+    }
+
+    .contacts-content {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .contacts-container {
+        padding: 40px 11px;
+    }
+}

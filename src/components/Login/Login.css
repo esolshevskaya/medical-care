@@ -1,0 +1,180 @@
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e6e6e6;
+}
+
+.modal h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #252B42;
+    margin: 0 0 25px 0;
+    text-align: center;
+}
+
+.field {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #252B42;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.field input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #252B42;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.field input:focus {
+    outline: none;
+    border-color: #FF685B;
+    box-shadow: 0 0 0 2px rgba(255, 104, 91, 0.1);
+}
+
+.field input::placeholder {
+    color: #737373;
+}
+
+.error {
+    color: #E74040;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    margin: -10px 0 15px 0;
+    padding: 8px 12px;
+    background: rgba(231, 64, 64, 0.05);
+    border-radius: 5px;
+    border-left: 3px solid #E74040;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+.modal .button-primary {
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 22px;
+    min-width: 80px;
+}
+
+.modal .button-secondary {
+    padding: 12px 20px;
+    font-size: 14px;
+    line-height: 22px;
+    min-width: 80px;
+}
+
+.modal {
+    animation: modalAppear 0.2s ease-out;
+}
+
+.test-credentials {
+    margin-top: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #FF685B;
+}
+
+.test-credentials h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #252B42;
+    margin: 0 0 10px 0;
+}
+
+.test-credentials p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #737373;
+    margin: 5px 0;
+}
+
+.test-credentials strong {
+    color: #252B42;
+}
+
+.button-primary:disabled,
+.button-secondary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.field input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+
+/* АДАПТИВКИ */
+@media (max-width: 480px) {
+    .modal-backdrop {
+        padding: 15px;
+    }
+
+    .modal {
+        padding: 30px 20px;
+        min-width: 280px;
+    }
+
+    .modal-actions {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+
+    .modal-actions button {
+        width: 100%;
+    }
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}

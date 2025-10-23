@@ -1,0 +1,19 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    color: #252B42;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+button {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.98);
+}
