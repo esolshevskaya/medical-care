@@ -2,6 +2,8 @@
 
 A modern, responsive medical service platform built with React, featuring user authentication and a clean, professional design.
 
+Avaliable on Pages: https://esolshevskaya.github.io/medical-care/
+
 ## Project Overview
 
 This project was developed as a technical task to create a fully responsive medical platform with user authentication. The application demonstrates modern React development practices with a focus on responsive design and user experience.
